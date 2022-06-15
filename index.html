@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ad7b718e42.js" crossorigin="anonymous" defer></script>
     <title>Login Form Board</title>
 </head>
 <body>
@@ -24,17 +25,39 @@
                     <span class="btn-inline"> <span class="inline-bold-text">Try it free 7 days </span>then $20/mo. thereafter</span>
                 </button>
 
-                <div class="wrapper">
-                    <form action="" id="form" class="form">
-                        <input type="text" placeholder="first name" class="input">
-                        <input type="text" placeholder="last name" class="input">
-                        <input type="email" placeholder="email address" class="input">
-                        <input type="password" placeholder="password" class="input">
-                        <button class="input submit-btn">claim your free trial</button>
-                    </form>
+                <form action="" id="form" class="form">
+                    <div class="form-control success">
+                        <input type="text" placeholder="first name">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <small id="error">First Name cannot be empty</small>
+                    </div>
 
-                    <p class="sm-p-text">by clicking the button, you are agreeing to our <a class="ts">terms and services</a></p>
-                </div>
+                    <div class="form-control success">
+                        <input type="text" placeholder="last name">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <small id="error">Last Name cannot be empty</small>
+                    </div>
+
+                    <div class="form-control error">
+                        <input type="email" placeholder="email address">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <small id="error">Looks like this is not an email</small>
+                    </div>
+
+                    <div class="form-control error">
+                        <input type="password" placeholder="password">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <small id="error">Password cannot be empty</small> 
+                    </div>
+
+                    <button class="submit-btn">claim your free trial</button>
+
+                    <p class="sm-p-text">by clicking the button, you are agreeing to our <a class="ts">terms and services</a></p> 
+                </form>
             </div>
         </div>
     </div>
